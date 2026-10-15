@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Haru Okabe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <a href="#top">Haru Okabe</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <p id="weather-icon"> </p>
+            </nav>
+        </header>
+        <main>
+            <section id="top">
+                <img src="media/top.jpeg" width="80%">
+                <h1>
+                    Haru Okabe<br>
+                    Portfolio
+                </h1>
+            </section>
+            <section id="about">
+                <h3>About</h3>
+                <p>
+                    岡部遼<br>
+                    東京都市大学デザイン・データ科学部
+                </p>
+                <p>
+                    専門：料理<br>
+                    スキル：和食/洋食/中華/製菓
+                </p>
+            </section>
+            <section id="works">
+                <h3>Works</h3>
+                <div class="works-controls">
+                    <select id="category">
+                        <option value="all">すべてのカテゴリ</option>
+                    </select>
+                    <select id="sort">
+                        <option value="new">新しい順</option>
+                        <option value="old">古い順</option>
+                        <option value="title">タイトル順</option>
+                    </select>
+                </div>
+                <div id="works-grid"></div>
+            </section>
+        </main>
+        <footer>
+            <span>© 2026 Haru Okabe</span>
+        </footer>
+        <script src="works.js"></script>
+    </body>
+</html>
